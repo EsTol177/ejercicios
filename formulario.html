@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>El club viejuner</h1>
+        <form action="/registeruser" method="post"></form>
+            <table>
+        <tr>
+            <td><label for="UserName">Nombre:</label></td>
+            <td><input type="text" id="UserName" name="UserName" placeholder="Escribe aquí" required> </td>
+        </tr>
+        <tr>
+            <td><label for="UserLastname">Apellido:</label></td>
+            <td><input type="text" id="UserLastname" name="UserLastname" placeholder="Escribe aquí" required> </td>
+        </tr>
+        <tr>
+            <td><label for="Age">Edad:</label></td>
+            <td><input type="number" id="Age" name="Age" min="15" max="112" required></td>
+        </tr>
+        <tr>
+            <td><label for="Gender">Sexo:</label></td>
+            <td>
+                Mujer<input type="radio" id="GenderM" name="Gender" value="M">
+                Hombre<input type="radio" id="GenderH" name="Gender" value="H">
+                Otro<input type="radio" id="GenderO" name="Gender" value="O"></td>
+            </tr>
+            <tr>
+                <td><label for="FeelingV">Me siento viejuna/o:</label></td>
+                <td>
+                si<input type="radio" id="GenderM" name="Gender" value="M">
+                no<input type="radio" id="GenderH" name="Gender" value="H"></td>
+        </tr>
+        <tr>
+            <td><label for="Write">Escribe sobre ti:</label></td>
+            <td>
+                <input type="textarea" id="Write" name="Write" placeholder="Escribe aqui"></td>
+            </tr>
+    </table>
+    <h2>Tus circunstancias:</h2>
+    <table>
+        <tr>
+            <td><label for="Email">Correo electrónico:</label></td>
+            <td> <input type="email" id="Email" name="Email" placeholder="hola@tumail.com" required></td>
+        </tr>
+        <tr>
+            <td><label for="Phone">Teléfono:</label></td>
+            <td><input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-45-678" required></td>
+        </tr>
+ </table> <br><br>
+ <input type="submit" value="Submit"> 
+
+<h1>Ladronzuelos de Bicicletas</h1>
+<table>
+    <tr>
+        <td><label for="Day">Día:</label></td>
+        <td><input type="date" id="Day" name="Day"></td>
+    </tr>
+    <tr>
+        <td><label for="Hour">Hora:</label></td>
+        <td><input type="time" id="Hour" name="Hour"></td>
+    </tr>
+    <tr>
+        <td><label for="Color">Color:</label></td>
+        <td><input type="color" id="Color" name="Color"></td>
+    </tr>
+    <tr>
+        <td><label for="Price">Rango de precio (en euros):</label></td>
+        <td><input type="Range" id="Price" name="Price" min="0" max="3000"></td>
+    </tr>
+    <tr>
+        <td><label for="Type">Tipo de bicicleta:</label></td>
+        <td><select name="Type" id="Type">
+            <option value="selectyourself">--Selecciona aquí--</option>
+            <optgroup label="Paseo">
+                <option value="Senorial">Señorial</option>
+                <option value="Antiplebeyos">Anti-plebeyos</option>
+                <option value="PorEncimaDelHombro">Por encima del hombro</option>
+            </optgroup>
+            <optgroup label="Montaña">
+                <option value="Gamusinos">Gamusinosl</option>
+                <option value="Hueleflores premium">Hueleflores premium</option>
+                <option value="Fango lover">Fango lover</option>
+            </optgroup>
+            <optgroup label="Carrera">
+                <option value="Metroymedio">Metroymedio</option>
+                <option value="3delatarde.Fluorescenteedition">3 de la tarde. Fluorescente edition</option>
+                <option value="Grupitors">Grupitors</option>
+            </optgroup>
+        </select></td>
+    </tr>
+    <tr>
+        <td><label for="Accesory">Accesorios:</label></td>
+        <td><select name="Accesory" id="Accesory" multiple size="6" multiple>
+            <option value="Ruedines">Ruedines</option>
+            <option value="Pegatinas">Pegatinas</option>
+            <option value="Cestita">Cestita</option>
+            <option value="Bombadeaire">Bomba de aire</option>
+            <option value="Timbre">Timbre</option>
+            <option value="Foco">Foco</option>
+          </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="QueMarcaEra">¿Qué marca era?:</label></td>
+        <td><input list="QueMarcaEra"> 
+            <datalist id="QueMarcaEra">
+            <option value="Specialized">
+            <option value="Merida">
+            <option value="Trek">
+            <option value="Scott">
+            <option value="Giant">
+          </datalist></td>
+    </tr>
+</table>
+</form>
+<br><br>
+<input type="submit" value="Submit">
+</body>
+</html>
