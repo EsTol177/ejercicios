@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>El club viejuner</h1>
-        <form action="/registeruser" method="post"></form>
+        <form action="/registeruser" method="post">
             <table>
         <tr>
             <td><label for="UserName">Nombre:</label></td>
@@ -52,16 +52,18 @@
         </tr>
  </table> <br><br>
  <input type="submit" value="Submit"> 
+</form>
 
 <h1>Ladronzuelos de Bicicletas</h1>
+<form action="/ladron" method="post">
 <table>
     <tr>
         <td><label for="Day">Día:</label></td>
-        <td><input type="date" id="Day" name="Day"></td>
+        <td><input type="date" id="Day" name="Day"required></td>
     </tr>
     <tr>
         <td><label for="Hour">Hora:</label></td>
-        <td><input type="time" id="Hour" name="Hour"></td>
+        <td><input type="time" id="Hour" name="Hour"required></td>
     </tr>
     <tr>
         <td><label for="Color">Color:</label></td>
@@ -69,7 +71,7 @@
     </tr>
     <tr>
         <td><label for="Price">Rango de precio (en euros):</label></td>
-        <td><input type="Range" id="Price" name="Price" min="0" max="3000"></td>
+        <td><input type="Range" id="Price" name="Price" min="0" max="3000"required></td>
     </tr>
     <tr>
         <td><label for="Type">Tipo de bicicleta:</label></td>
@@ -116,8 +118,7 @@
           </datalist></td>
     </tr>
 </table>
-</form>
-<br><br>
 <input type="submit" value="Submit">
+</form>
 </body>
 </html>
